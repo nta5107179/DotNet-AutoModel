@@ -1,0 +1,19 @@
+﻿<Window x:Class="AutoModel.Options.NamespaceConfig"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoModel.Options"
+        mc:Ignorable="d"
+        Title="配置namespace" Height="150" Width="320" WindowStyle="ToolWindow" ShowInTaskbar="False" WindowStartupLocation="CenterOwner">
+    <DockPanel Margin="20">
+        <DockPanel DockPanel.Dock="Top" VerticalAlignment="Top">
+            <Label Content="namescape" />
+            <TextBox x:Name="text_namespace" VerticalContentAlignment="Center"  />
+        </DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Bottom">
+            <Button x:Name="but_cancel" Content="取消" Padding="8,2" Click="but_cancel_Click" />
+            <Button x:Name="but_ok" Content="确定" Padding="8,2" Margin="5,0,0,0" Click="but_ok_Click" />
+        </StackPanel>
+    </DockPanel>
+</Window>
